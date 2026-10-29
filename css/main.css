@@ -1,0 +1,82 @@
+/* .barlow-semibold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}   */
+* {
+  /* border: 1px solid red; */
+}
+html {
+  scroll-behavior: smooth;
+}
+.archiweb__full {
+  max-width: 1064px;
+  margin: 0 auto;
+}
+
+.navbar {
+  padding-top: 45px;
+  padding-bottom: 92px;
+}
+
+.menu {
+  max-width: 1245px;
+  margin: 0 auto;
+}
+
+.navbar-brand img {
+  width: 180px;
+}
+
+.nav__menu {
+  font: 400 20px "Inter", sans-serif;
+  text-align: center;
+  color: #2f2e2e;
+}
+
+.nav__menu__home {
+  font: 700 20px "Inter", sans-serif;
+  text-align: center;
+  color: #2f2e2e;
+}
+.magnifier {
+  width: 25px;
+  height: 22px;
+}
+
+.nav-item {
+  padding-left: 63px;
+  transition: 0.3s;
+}
+.nav-item a:hover {
+  transition: 0.3s;
+  /* Делаем текст визуально жирнее без сдвига */
+  text-shadow: 0 0 0.8px currentColor, 0 0 0.8px currentColor;
+}
+.nav-item:first-child {
+  padding-left: 0;
+}
+.nav-item:last-child {
+  padding-left: 23px;
+}
+
+@media screen and (max-width: 1440px) {}
+@media screen and (max-width: 992px) {
+  .nav-item {
+  padding-left: 0;
+}
+}
+@media screen and (max-width: 360px) {}
+@media screen and (max-width: 200px) {}
