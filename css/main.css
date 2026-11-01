@@ -89,6 +89,7 @@ html {
   display: flex;
   align-items: center;
 }
+
 .header__background {
   position: absolute;
   z-index: 1;
@@ -101,6 +102,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .header__container {
   z-index: 2;
   max-width: 691px;
@@ -109,6 +111,7 @@ html {
   display: flex;
   align-items: center;
 }
+
 .header__content {
   max-width: 436px;
   margin-left: 100px;
@@ -116,12 +119,49 @@ html {
 }
 
 .header__h1 {
-  font: 900 51px "Playfair Display", sans-serif;
+  font: 900 51px "Playfair Display", serif;
   color: #2f2e2e;
 }
 
 .header__p {
   font: 200 32px "Inter", sans-serif;
+  color: #2f2e2e;
+}
+
+.our__services {
+  background: rgba(37, 77, 77, 0.2);
+  padding-top: 16px;
+}
+
+.our__services__h2 {
+  font: 900 51px "Playfair Display", serif;
+  text-align: center;
+  color: #2f2e2e;
+  margin-bottom: 45px;
+}
+
+.our__services__items {
+  max-width: 1125px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.our__services__item {
+  width: 158px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.our__services__item h3 {
+  font: 900 27px "Playfair Display", serif;
+  color: #2f2e2e;
+}
+
+.our__services__item p {
+  font: 400 16px "Playfair Display", serif;
   color: #2f2e2e;
 }
 
@@ -131,16 +171,19 @@ html {
   .nav-item {
     padding-left: 0;
   }
+
   .header {
     padding: 0 20px;
     display: flex;
     min-height: auto;
     flex-direction: column;
   }
+
   .header__background {
     position: static;
     height: 400px;
   }
+
   .header__container {
     position: static;
     transform: none;
@@ -149,6 +192,7 @@ html {
     text-align: center;
     min-height: 0;
   }
+
   .header__content {
     margin-left: 0;
   }
@@ -158,13 +202,28 @@ html {
   .header__h1 {
     font-size: 32px;
   }
+
   .header__p {
     font-size: 22px;
   }
-  
-  
+
+
 }
-@media screen and (max-width: 576px) {}
-@media screen and (max-width: 360px) {}
+
+@media screen and (max-width: 576px) {
+  .our__services__items {
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .our__services__h2 {
+    font-size: 32px;
+  }
+  .our__services__item h3 {
+    font-size: 22px;
+}
+}
 
 @media screen and (max-width: 200px) {}
