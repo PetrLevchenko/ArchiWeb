@@ -165,6 +165,51 @@ html {
   color: #2f2e2e;
 }
 
+.about__us {
+  padding-top: 76px;
+  margin-bottom: 95px;
+}
+
+.about__us__items {
+  max-width: 1276px;
+  margin-left: 100px;
+  display: flex;
+}
+
+.about__us__img {
+  overflow: hidden;
+}
+
+.about__us__img img {
+  clip-path: inset(0 40% 0 0);
+}
+
+.about__us__item {
+  max-width: 539px;
+  padding-top: 68px;
+}
+
+.about__us__item__inner {
+  padding-left: 84px;
+  padding-right: 20px;
+}
+
+.about__us__item p {
+  font: 200 32px "Inter", sans-serif;
+  color: #2f2e2e;
+}
+
+.about__us__item h2 {
+  font: 900 51px "Playfair Display", serif;
+  color: #2f2e2e;
+  margin-bottom: 30px;
+}
+
+.about__us__item button {
+  font: 700 20px "Inter", sans-serif;
+  color: #2f2e2e;
+}
+
 @media screen and (max-width: 1440px) {}
 
 @media screen and (max-width: 992px) {
@@ -196,6 +241,11 @@ html {
   .header__content {
     margin-left: 0;
   }
+
+  .about__us__items {
+    margin-left: 0;
+    padding: 0 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -207,7 +257,21 @@ html {
     font-size: 22px;
   }
 
+  .about__us__items {
+    display: block;
+    text-align: center;
+    margin-left: 0;
+  }
 
+  .about__us__item__inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about__us__item {
+    margin: 0 auto;
+    padding: 44px 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -215,15 +279,25 @@ html {
     gap: 20px;
     justify-content: center;
   }
+
 }
 
 @media screen and (max-width: 360px) {
   .our__services__h2 {
     font-size: 32px;
   }
+
   .our__services__item h3 {
     font-size: 22px;
-}
+  }
+
+  .about__us h2 {
+    font-size: 32px;
+  }
+
+  .about__us p {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 200px) {}
